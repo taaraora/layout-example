@@ -9,7 +9,7 @@ module.exports = {
     port: 9000,
     contentBase: path.join(__dirname, 'dist'),
     host: '127.0.0.1',
-    hot: true
+    hot: true,
   },
   entry: './src/index.js',
   module: {
@@ -17,9 +17,9 @@ module.exports = {
       {
         include: [path.resolve(__dirname, 'src')],
         loader: 'babel-loader',
-        test: /\.js$/
+        test: /\.js$/,
       },
-    ]
+    ],
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -29,6 +29,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       favicon: './src/assets/favicon.ico',
-    })
+    }),
   ],
 };
