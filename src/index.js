@@ -1,11 +1,3 @@
-import User from './user';
+import generateRows from './field';
 
-const u = new User(33, 'qdqdqwdqwd');
-const r = () => {
-  console.log(u);
-};
-console.log(u);
-
-document.querySelector('body').addEventListener('click', () => {
-  r();
-});
+generateRows();
